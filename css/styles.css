@@ -1,0 +1,89 @@
+*{
+    font-size: 12px;
+    font-family: Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#interface{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#interface .cabecalho{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#interface .cabecalho .logomenu{ /*NAV*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 5rem;
+    background-color: transparent;   
+}
+@media screem and (min-width: 992px){
+    #interface .cabecalho .logomenu{
+        justify-content: space-around;
+    }
+}
+
+#interface .cabecalho .logomenu .linkLogo{
+    display: block;
+    width: 120px;             
+}
+#interface .cabecalho .logomenu .linkLogo .img{
+    width: 1000px;
+}
+
+#interface .cabecalho .logomenu .btnToggle {
+    display: block;
+    width: 2rem;
+    color: white;
+}
+
+@media screen and (min-width: 992px){
+    #interface .cabecalho .logomenu .btnToggle {
+        display: block;
+    }
+}
+
+#interface .cabecalho .logomenu .menu{
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+@media screen and (min-width: 992px){
+    #interface .cabecalho .logomenu .menu{
+        display: flex;
+    }
+}
+
+#interface .cabecalho .logomenu .menu .li::after {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    border-bottom: 1px solid white;
+}
+
+#interface .cabecalho .logomenu .menu .li .a{
+    /*display: inline-block;*/
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
