@@ -6,6 +6,16 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: roboto;
+    src: url(../fontes/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: Montserra;
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+}
+
 #interface{
     width: 100vw;
     height: 100vh;
@@ -86,5 +96,28 @@
     padding: 5rem 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    
+    font-family: roboto;
+}
+
+#interface .cabecalho .grpTitles {
+    display: block;
+    padding-top: 10%;
+    padding-left: 30%;
+    font-family: Montserra;
+    color: rgb(57, 89, 250);
+}
+
+#interface .cabecalho .grpTitles .TitlePrincipal {
+    font-size: 2rem;
+    font-family: Montserra;
+    color: white;
+}
+
+#interface .cabecalho .grpTitles .titleLogo {
+    font-size: 1.8rem;
+}
+
+#interface .cabecalho .grpTitles .subText {
+    font-size: 1.2rem;
+    font-style: italic;
 }
