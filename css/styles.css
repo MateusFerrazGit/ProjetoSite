@@ -115,9 +115,14 @@
 
 #interface .cabecalho .grpTitles .titleLogo {
     font-size: 1.8rem;
+    font-family: Montserra;
+    color: rgb(57, 89, 250);
+    font-weight: 500;
 }
 
 #interface .cabecalho .grpTitles .subText {
     font-size: 1.2rem;
     font-style: italic;
+    color: gray;
+    margin-top: 1.5rem;
 }
